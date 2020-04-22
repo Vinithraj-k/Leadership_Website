@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script
+		  src="https://code.jquery.com/jquery-3.5.0.min.js"
+		  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+		  crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+	</head>
+	<style type="text/css">
+		body{
+			
+			background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
+		.navbar{
+			padding :10px 10px 10px 30px;
+		}
+		.navbar-brand{
+			font-family: 'Abril Fatface', cursive;
+			color: black;
+			font-size: 2rem;
+		}
+		.navbar-brand:hover{
+			color: orangered;
+		}
+		.nav-item{
+			margin : 10px 30px 10px 30px;
+		}
+
+		.nav-link{
+			color: black;
+			font-size: 1.15rem;
+		}
+		.nav-link:focus, .nav-link:hover {
+		    text-decoration: none;
+		    color: black;
+		    text-shadow: 7px 0 7px red;
+		}
+
+		.image{			
+			 max-height: 250px;
+		}
+
+		.welcome{
+			padding: 30px;	
+		}
+
+		.welcome2{
+			padding: 30px;	
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.tile{
+			font-family: 'Merriweather Sans', sans-serif;
+			font-size: 1.2rem;
+			margin: 10px;
+			background-color: white;
+
+			
+			text-align: center;
+  			/*line-height: 150px;*/
+  			border-radius: 20px;
+  			box-shadow: 3px 3px 10px #888888;
+  			 border: 2px solid white;
+		}
+
+		.tile:hover{
+			  box-shadow: 7px 7px 25px #888888;
+			   border: 2px solid pink;
+		}
+
+		.tile2{
+			margin: 10px;
+			border-radius: 20px;
+			background-color: white;
+  			box-shadow: 3px 3px 10px #888888;
+  			 border: 2px solid white;
+		}
+
+		.tile2:hover{
+				background-color: white;
+			  box-shadow: 7px 7px 25px #888888;
+			   border: 2px solid pink;
+		}
+
+		.tile3{
+			margin: 10px;
+			padding: 1px;
+			border-radius: 20px;
+			background-color: white;
+  			box-shadow: 3px 3px 10px #888888;
+  			font-family: 'Merriweather Sans', sans-serif;
+			font-size: 1.2rem;
+			text-align: center;
+			 border: 2px solid white;
+		}
+
+		.tile3:hover{
+				background-color: white;
+			  box-shadow: 7px 7px 25px #888888;
+			  border: 2px solid pink;
+		}
+
+		.image1 {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: contain;
+		    overflow: hidden;
+		    padding: 10px;
+		}
+
+		.face {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		    overflow: hidden;
+		    padding: 0px;
+		    border-radius: 20px;
+		}
+
+		.poster{
+			/*font-family: 'Merriweather Sans', sans-serif;*/
+			padding: 65px;
+			margin: 10px;
+			
+			 background: url(assets/sunset.jpg);
+			  background-repeat: no-repeat;
+			  background-size: 100% 100%;
+
+			color: black;
+			text-align: center;
+			/*text-shadow: 7px 0 10px black;*/
+
+  			/*line-height: 150px;*/
+  			border-radius: 20px;
+  			box-shadow: 3px 3px 10px #888888;
+  			border: 2px solid white;
+		}
+
+
+		.logo{
+			height: 150px;
+			padding: 3px;
+		}
+
+		.logo2{
+			height: 150px;
+			padding: 3px;
+		}
+		.btn{
+			font-family: 'Merriweather Sans', sans-serif;
+		}
+		h6{
+			line-height: 40px;
+		}
+	</style>
+<body>
+	<nav class="navbar navbar-expand-sm justify-content-end">
+	    <a class="navbar-brand" href="#">LeaderClass</a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+	        <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-1" id="navbarSupportedContent">
+	        <ul class="navbar-nav text-right">
+	            <li class="nav-item active">
+	                <a class="nav-link" href="#">Career</a>
+	            </li>
+	            <li class="nav-item active">
+	                <a class="nav-link" href="#">Summits</a>
+	            </li>
+	            <li class="nav-item active">
+	                <a class="nav-link" href="#">Student Scholorship</a>
+	            </li>
+	            <li class="nav-item active">
+	                <a class="nav-link" href="#">About</a>
+	            </li>
+	            <li class="nav-item active">
+	                <a class="nav-link" href="#">FAQ</a>
+	            </li>
+	        </ul>
+	    </div>
+	</nav>
+
+<div class="container-fluid">
+	<div class='col '>
+		<div class="row welcome">
+			<div class="col pad-3">
+				<h1>Welcome</h1>
+				<h6>Leader Classes harnesses the world’s best Career Advancement & Leadership Development resources, helping you gain expert Knowledge, Practical Guidance & Actionable Insights from Extraordinary leaders & World Class Institutions through Specialized, Affordable, Online & Offline Programs custom crafted to Accelerate your Career & Business Success While transforming you into a better & more effective Leader.</h6>
+			</div>
+			<div class="col poster">
+				<h1>Leadership Classes</h1>
+				<h5>Career Advancement</h5>
+				<h5>And Leadership Development Summit</h5>	
+				<h5>Sunday,24th Mat 2020 | Banglore</h5>
+				<button class='btn btn-success'>Join Class</button>
+			</div>
+		</div>
+
+		<h1>We Learn From</h1>
+		<div class="row welcome">
+			<h3>Universities Like</h3>
+			<div class="row ">
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/mit.png"/>
+					</div>
+					MIT
+					
+				</div>
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/harvard.png"/>
+					</div>
+					Harvard
+				</div>
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/yale.png"/>
+					</div>
+					Yale
+				</div>
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/oxford.png"/>
+					</div>
+					Oxford
+				</div>
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/uc.png"/>
+					</div>
+					UC Berkley
+				</div>
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/stanford.png"/>
+					</div>
+					Stanford
+				</div>
+			</div>
+
+		<div class="row ">
+			<div class="col tile">
+				<div class="logo">
+					<img class="image1" src="assets/upenn.png"/>
+				</div>
+				Upenn
+				
+			</div>
+			<div class="col tile">
+				<div class="logo">
+					<img class="image1" src="assets/Insead.png"/>
+				</div>
+				Insead
+			</div>
+			<div class="col tile">
+				<div class="logo">
+					<img class="image1" src="assets/IMD.png"/>
+				</div>
+				IMD
+			</div>
+			<div class="col tile">
+				<div class="logo">
+					<img class="image1" src="assets/LBS.png"/>
+				</div>
+				LBS
+			</div>
+			<div class="col tile">
+				<div class="logo">
+					<img class="image1" src="assets/Cambridge.png"/>
+				</div>
+				Cambridge
+			</div>
+			<div class="col tile">
+				<div class="logo">
+					<img class="image1" src="assets/NorthWestern.png"/>
+				</div>
+				NorthWestern
+			</div>
+		</div>
+		</div>
+
+		<div class="row welcome">
+			<h3>Economy and Global Enablers Like</h3>
+			<div class="row ">
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/wef.png"/>
+					</div>
+					World Economic Forum
+					
+				</div>
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/aspen.png"/>
+					</div>
+					The Aspen Institute
+				</div>
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/brookings.png"/>
+					</div>
+					Brookings
+				</div>
+				<div class="col tile">
+					<div class="logo">
+						<img class="image1" src="assets/kauffman.png"/>
+					</div>
+					Kauffman Foundation
+				</div>
+			</div>
+		</div>
+
+		<div class="row welcome">
+			<h3>Top Organisations like</h3>
+			<div class="row ">
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/google.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/amazon.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/microsoft.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/apple.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/unilever.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/mckinsey.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/ge.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/goldman.png"/>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="row ">
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/pg.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/sap.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/coco-cola.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/gsk.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/shell.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/jp.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/citi.png"/>
+					</div>
+				</div>
+				<div class="col tile2">
+					<div class="logo">
+						<img class="image1" src="assets/nestle.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- //leaders -->
+		<div class="row">
+			<div class="col welcome2">
+				<h3>Leaders Like</h3>
+				<div class="row">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/apj.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/obama.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/benjamin.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/shinzo.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col welcome2">
+				<h3>Visionaries and Pioneers Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/jrdtata.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/stevejobs.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/jeffbezos.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/elonmusk.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col welcome2">
+				<h3>Business Legends Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/warrenbuffett.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/billgates.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/jackma.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/herb.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col welcome2">
+				<h3>Global Business Leaders Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/tata.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/welch.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/ambani.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/marybarra.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col welcome2">
+				<h3>Investors Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/johndoerr.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/michaelmoritz.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/masayoshison.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/marymeeker.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col welcome2">
+				<h3>Innovaters Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/vintoncerf.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/klaus.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/hasso.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/larrypage.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col welcome2">
+				<h3>Futurists Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/ray.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/kaku.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/alvintoffler.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/johnnaisbitt.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col welcome2">
+				<h3>Thought Leaders Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/jim.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/tom.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/robin.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/daniel.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col welcome2">
+				<h3>World Class Professors Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/drucker.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/kotter.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/kotler.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/porter.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col welcome2">
+				<h3>Distinguished Entrepreneurs Like</h3>
+				<div class="row ">
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/smith.jfif"/>
+						</div>
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/branson.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/bloomberg.jfif"/>
+						</div>
+					
+					</div>
+					<div class="col tile3">
+						<div class="logo">
+							<img class="face" src="images/murthy.jfif"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</div>
+	</div>
+</div>
+
+</body>
+</html>
